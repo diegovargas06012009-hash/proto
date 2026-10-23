@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones | Alma Cacao</title>
+    <meta name="description" content="Descubre las colecciones exclusivas de Alma Cacao. Historias y experiencias nacidas del mejor cacao.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<div class="cursor-glow"></div>
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+        </a>
+
+        <nav class="desktop-menu">
+            <a href="index.html">Inicio</a>
+            <a href="Catalogo.html">Chocolates</a>
+            <a href="colecciones.html" class="active">Colecciones</a>
+            <a href="historia.html">Nuestra historia</a>
+            <a href="merch.html">Merch</a>
+            <a href="contacto.html">Contacto</a>
+              <a href="juego.html">Entretenimiento</a>
+        </nav>
+
+         <div class="nav-actions">
+        <button class="nav-icon" onclick="openSearch()" aria-label="Buscar">⌕</button>
+        
+        <button class="nav-icon cart-trigger" onclick="openCart()" aria-label="Carrito">
+            🛒 <span id="cart-count">0</span>
+        </button>
+
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="collections-hero">
+        <div class="collections-hero-content">
+            <span class="eyebrow">ALMA CACAO · COLECCIONES</span>
+            <h1>Historias escritas <em>en cacao.</em></h1>
+            <p>
+                Para nosotros, una colección es más que una variedad de barras: es una guía sensorial pensada para conectar con emociones, momentos de bienestar y el placer único de lo natural.
+            </p>
+            <a href="#collections" class="collection-scroll">
+                <span>↓</span>
+            </a>
+        </div>
+
+        <div class="hero-cacao-orb">
+            <div class="orb-inner"></div>
+        </div>
+    </section>
+
+        <section class="collections-intro">
+        <div class="intro-number">01</div>
+        <div class="intro-content">
+            <span class="eyebrow">NUESTRA FILOSOFÍA</span>
+            <h2>Cada colección es <em>un momento para recordar.</em></h2>
+            <p>
+                Agrupamos nuestras creaciones pensando en cómo disfrutas el chocolate: desde la búsqueda de intensidad pura hasta el deseo de regalar un detalle inolvidable.
+            </p>
+        </div>
+    </section>
+
+        <section class="collections-section" id="collections">
+        
+        <article class="collection-card collection-one">
+            <div class="collection-number">01</div>
+            <div class="collection-visual">
+                <div class="floating-cacao cacao-one">●</div>
+                <div class="floating-cacao cacao-two">●</div>
+                <div class="collection-chocolate">
+                </div>
+            </div>
+            <div class="collection-info">
+                <span>LA ESENCIA</span>
+                <h3>Origen</h3>
+                <p>
+                    Una colección dedicada al cacao fino de aroma en su forma más pura. Intensidad, carácter y matices profundos sin aditivos artificiales.
+                </p>
+                <a href="Catalogo.html">EXPLORAR ORIGEN <b>→</b></a>
+            </div>
+        </article>
+
+        <article class="collection-card collection-two">
+            <div class="collection-number">02</div>
+            <div class="collection-visual">
+                <div class="collection-chocolate light">
+                    <div></div><div></div><div></div><div></div>
+                </div>
+                <div class="gold-circle"></div>
+            </div>
+            <div class="collection-info">
+                <span>EL EQUILIBRIO</span>
+                <h3>Ritual</h3>
+                <p>
+                    Combinaciones suaves y notas aromáticas pensadas para acompañar tus pausas diarias, tu taza de café o tus momentos de bienestar.
+                </p>
+                <a href="Catalogo.html">DESCUBRIR RITUAL <b>→</b></a>
+            </div>
+        </article>
+
+        <article class="collection-card collection-three">
+            <div class="collection-number">03</div>
+            <div class="collection-visual">
+                <div class="gift-box">
+                    <span>ALMA</span>
+                    <small>CACAO</small>
+                </div>
+                <div class="ribbon"></div>
+            </div>
+            <div class="collection-info">
+                <span>PARA COMPARTIR</span>
+                <h3>Momentos</h3>
+                <p>
+                    Cajas de degustación y presentaciones especiales diseñadas para regalar, celebrar logros o compartir en buena compañía.
+                </p>
+                <a href="Catalogo.html">VER REGALOS <b>→</b></a>
+            </div>
+        </article>
+        
+        <article class="collection-card collection-four">
+            <div class="collection-number">04</div>
+            <div class="collection-visual">
+                <div class="signature-circle">
+                    <span>A</span>
+                </div>
+                <div class="signature-line"></div>
+            </div>
+            <div class="collection-info">
+                <span>EDICIONES LIMITADAS</span>
+                <h3>Signature</h3>
+                <p>
+                    Lotes exclusivos y recetas de temporada elaborados en cantidades limitadas para sorprender a los verdaderos amantes del cacao.
+                </p>
+                <a href="Catalogo.html">DESCUBRIR SIGNATURE <b>→</b></a>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="collection-experience">
+        <div class="experience-content">
+            <span class="eyebrow">UNA EXPERIENCIA SENSORIAL</span>
+            <h2>Del cacao <em>a tus sentidos.</em></h2>
+            <p>Queremos que abrir una caja de Alma Cacao sea una pausa consciente en tu día.</p>
+        </div>
+
+        <div class="experience-steps">
+            <div class="experience-step">
+                <span>01</span>
+                <h3>Elige tu origen</h3>
+                <p>Explora porcentajes y perfiles de sabor pensados para tu estado de ánimo.</p>
+            </div>
+            <div class="experience-step">
+                <span>02</span>
+                <h3>Crea tu ritual</h3>
+                <p>Acompáñalo con tu bebida favorita y tómate un momento para saborear.</p>
+            </div>
+            <div class="experience-step">
+                <span>03</span>
+                <h3>Comparte la pasión</h3>
+                <p>Haz del buen chocolate un regalo que conecta a las personas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="collections-cta">
+        <div>
+            <span class="eyebrow">¿LISTO PARA PROBAR?</span>
+            <h2>Encuentra tu <em>Alma Cacao.</em></h2>
+            <a href="Catalogo.html" class="collection-cta-button">IR AL CATÁLOGO COMPLETO</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="logo">
+            </div>
+            <p>El placer del buen cacao.</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Explora</h4>
+            <a href="Catalogo.html">Chocolates</a>
+            <a href="colecciones.html">Colecciones</a>
+            <a href="merch.html">Merch</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Alma Cacao</h4>
+            <a href="historia.html">Nuestra historia</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Síguenos</h4>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">Facebook</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 Alma Cacao</span>
+        <span>Hecho con cacao</span>
+    </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+    <button class="search-close" onclick="closeSearch()" aria-label="Cerrar">×</button>
+    <div class="search-content">
+        <span>BUSCAR EN ALMA CACAO</span>
+        <input type="text" id="search-input" placeholder="¿Qué estás buscando?">
+    </div>
+</div>
+
+<div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
+
+<aside class="cart-panel" id="cart-panel">
+    <div class="cart-header">
+        <div>
+            <span>TU PEDIDO</span>
+            <h2>Carrito</h2>
+        </div>
+        <button onclick="closeCart()" class="cart-close" aria-label="Cerrar">×</button>
+    </div>
+
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">$0.00</strong>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">Finalizar pedido por WhatsApp</button>
+    </div>
+</aside>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+<div class="footer-team">
+    <p>Proyecto desarrollado por: <span>Diego Vargas, Domenica Merchan, Paula Conforme, Analia Bajaña, Meilin Garcia e Scarleth Santistevan</span></p>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Alma Cacao</title>
+
+    <meta
+        name="description"
+        content="Ponte en contacto con Alma Cacao. Estamos aquí para ayudarte con pedidos, productos, eventos y colaboraciones."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+   <header class="navbar">
+    
+         <nav class="desktop-menu">
+         <a href="index.html">Inicio</a>
+         <a href="Catalogo.html">Chocolates</a>       
+         <a href="colecciones.html">Colecciones</a>
+         <a href="historia.html">Nuestra historia</a>
+         <a href="merch.html">Merch</a>
+         <a href="contacto.html" class="active">Contacto</a>
+           <a href="juego.html">Entretenimiento</a>
+    </nav>
+
+
+        <div class="nav-actions">
+
+            <button
+                class="nav-icon"
+                onclick="openSearch()"
+                aria-label="Buscar"
+            >
+                ⌕
+            </button>
+
+            <button
+                class="nav-icon cart-button"
+                onclick="openCart()"
+                aria-label="Carrito"
+            >
+                ♡
+                <span id="cart-count">0</span>
+            </button>
+
+            <button
+                class="menu-button"
+                onclick="toggleMenu()"
+                aria-label="Abrir menú"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+ 
+    <main>
+
+        <section class="contact-hero">
+
+            <div class="contact-hero-content">
+
+                <span class="eyebrow">
+                    ALMA CACAO · CONTACTO
+                </span>
+
+                <h1>
+                    Hablemos de
+                    <em>chocolate.</em>
+                </h1>
+
+                <p>
+                    ¿Tienes una pregunta, quieres hacer un pedido
+                    o te gustaría trabajar con nosotros?
+                    Estamos aquí para escucharte.
+                </p>
+
+            </div>
+
+            <div class="contact-hero-mark">
+                A
+            </div>
+
+        </section>
+
+
+        <section class="contact-main">
+
+            <div class="contact-info">
+
+                <span class="section-label">
+                    ENCUÉNTRANOS
+                </span>
+
+                <h2>
+                    Estamos
+                    <em>cerca.</em>
+                </h2>
+
+                <p>
+                    Escríbenos directamente o utiliza el formulario
+                    para enviarnos tu mensaje.
+                </p>
+
+
+                <div class="contact-details >
+
+                    <span class="contact-detail-number"> 
+
+                    </div>
+                            01
+                        </span>
+
+                        <div>
+                            <small>
+                                WHATSAPP: 
+                            </small>
+
+                            <strong>
+                                  0991363273
+                            </strong>
+                        </div>
+
+                        <span class="contact-arrow">
+                            →
+                        </span>
+
+
+                    <a
+                        href="mailto:hola@almacacao.com"
+                        class="contact-detail"
+                    >
+
+                        <span class="contact-detail-number">
+                            02
+                        </span>
+
+                        <div>
+                            <small>
+                                EMAIL
+                            </small>
+
+                            <strong>
+                                hola@almacacao.com
+                            </strong>
+                        </div>
+
+                        <span class="contact-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <div class="contact-detail">
+
+                        <span class="contact-detail-number">
+                            03
+                        </span>
+
+                        <div>
+                            <small>
+                                HORARIO
+                            </small>
+
+                            <strong>
+                                Lunes — Sábado
+                            </strong>
+
+                            <span class="contact-time">
+                                09:00 — 18:00
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-form-wrapper">
+
+                <span class="section-label">
+                    ESCRÍBENOS
+                </span>
+
+                <h2>
+                    Cuéntanos
+                    <em>qué necesitas.</em>
+                </h2>
+
+                <form
+                    class="contact-form"
+                    onsubmit="sendContactMessage(event)"
+                >
+
+                    <div class="form-group">
+
+                        <label for="contact-name">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            placeholder="Tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contact-email">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="email"
+                            placeholder="tu@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contact-subject">
+                            Motivo
+                        </label>
+
+                        <select
+                            id="contact-subject"
+                            name="subject"
+                            required
+                        >
+
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+
+                            <option value="pedido">
+                                Quiero hacer un pedido
+                            </option>
+
+                            <option value="productos">
+                                Información sobre productos
+                            </option>
+
+                            <option value="eventos">
+                                Eventos o regalos corporativos
+                            </option>
+
+                            <option value="colaboracion">
+                                Quiero colaborar con Alma Cacao
+                            </option>
+
+                            <option value="otro">
+                                Otro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contact-message">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="contact-message"
+                            name="message"
+                            rows="5"
+                            placeholder="Escribe tu mensaje..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit"
+                    >
+                        Enviar mensaje
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-whatsapp">
+
+            <div class="contact-whatsapp-content">
+
+                <span class="section-label">
+                    ¿PREFIERES HABLAR DIRECTAMENTE?
+                </span>
+
+                <h2>
+                    Escríbenos por
+                    <em>WhatsApp.</em>
+                </h2>
+
+                <p>
+                    Para pedidos y consultas rápidas,
+                    puedes escribirnos directamente.
+                </p>
+
+                <a
+                    href="https://wa.me/0991363273"
+                    target="_blank"
+                    class="whatsapp-button"
+                >
+                    Abrir WhatsApp
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+            <div class="contact-cacao-mark">
+
+                <span>
+                    A
+                </span>
+
+                <small>
+                    ALMA CACAO
+                </small>
+
+            </div>
+
+        </section>
+
+
+       <section class="contact-closing">
+
+            <p>
+                El placer del buen cacao.
+            </p>
+
+            <div class="closing-line"></div>
+
+            <span>
+                HECHO CON CACAO Y ALMA
+            </span>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-main">
+                    ALMA
+                </span>
+
+                <span class="logo-sub">
+                    CACAO
+                </span>
+
+            </a>
+
+            <p>
+                El placer del buen cacao.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="Catalogo.html">
+                Chocolates
+            </a>
+
+            <a href="colecciones.html">
+                Colecciones
+            </a>
+
+            <a href="historia.html">
+                Nuestra historia
+            </a>
+
+            <a href="merch.html">
+                Merch
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Alma Cacao
+            </span>
+
+            <span>
+                Hecho con cacao y alma.
+            </span>
+
+        </div>
+
+    </footer>
+
+   <div
+        class="search-overlay"
+        id="search-overlay"
+    >
+
+        <button
+            class="search-close"
+            onclick="closeSearch()"
+        >
+            ×
+        </button>
+
+        <div class="search-box">
+
+            <span>
+                BUSCAR
+            </span>
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="¿Qué estás buscando?"
+                autocomplete="off"
+            >
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="cart-overlay"
+        id="cart-overlay"
+        onclick="closeCart()"
+    ></div>
+
+
+    <aside
+        class="cart-panel"
+        id="cart-panel"
+    >
+
+        <div class="cart-header">
+
+            <h2>
+                Tu carrito
+            </h2>
+
+            <button onclick="closeCart()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cart-items"
+        ></div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cart-total">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-button"
+                onclick="checkout()"
+            >
+                Comprar por WhatsApp
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script>
+
+        function sendContactMessage(event) {
+
+            event.preventDefault();
+
+            const name =
+                document.getElementById("contact-name").value;
+
+            const email =
+                document.getElementById("contact-email").value;
+
+            const subject =
+                document.getElementById("contact-subject").value;
+
+            const message =
+                document.getElementById("contact-message").value;
+
+
+            const phone = "593999999999";
+
+
+            const text =
+                `Hola Alma Cacao.%0A%0A` +
+                `Mi nombre es: ${name}%0A` +
+                `Mi correo: ${email}%0A` +
+                `Motivo: ${subject}%0A%0A` +
+                `Mensaje:%0A${message}`;
+
+
+            window.open(
+                `https://wa.me/${phone}?text=${text}`,
+                "_blank"
+            );
+
+        }
+
+    </script>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+<div class="footer-team">
+    <p>Proyecto desarrollado por: <span>Diego Vargas, Domenica Merchan, Paula Conforme, Analia Bajaña, Meilin Garcia e Scarleth Santistevan</span></p>

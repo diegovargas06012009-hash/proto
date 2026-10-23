@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Nuestra Historia</title>
+
+    <meta
+        name="description"
+        content="Conoce la historia, filosofía y esencia de Alma Cacao."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="Style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="cursor-glow"></div>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-main">
+            </span>
+
+            <span class="logo-sub">
+            </span>
+
+        </a>
+
+
+         <nav class="desktop-menu">
+         <a href="index.html">Inicio</a>
+         <a href="Catalogo.html">Chocolates</a>       
+         <a href="colecciones.html">Colecciones</a>
+         <a href="historia.html"class="active">Nuestra historia</a>
+         <a href="merch.html">Merch</a>
+         <a href="contacto.html">Contacto</a>
+           <a href="juego.html">Entretenimiento</a>
+    </nav>
+
+        <div class="nav-actions">
+
+            <button
+                class="nav-icon"
+                onclick="openSearch()"
+                aria-label="Buscar"
+            >
+                ⌕
+            </button>
+
+
+            <button
+                class="nav-icon cart-button"
+                onclick="openCart()"
+                aria-label="Carrito"
+            >
+
+                🛒
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="menu-button"
+                onclick="toggleMenu()"
+                aria-label="Menú"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+   <div
+        class="mobile-menu"
+        id="mobile-menu"
+    > 
+    </div>    
+
+</header>
+
+
+<section class="story-hero">
+
+    <div class="story-hero-content">
+
+        <span class="eyebrow">
+            · NUESTRA HISTORIA
+        </span>
+
+        <h1>
+            Nacimos del
+            <em>cacao.</em>
+        </h1>
+
+        <p>
+            Y de la idea de que un buen chocolate
+            puede convertirse en mucho más que un
+            simple producto.
+        </p>
+
+    </div>
+
+
+    <div class="story-hero-mark">
+
+        <span>
+            A
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<section class="story-manifesto">
+
+    <div class="story-manifesto-number">
+        01
+    </div>
+
+
+    <div class="story-manifesto-content">
+
+        <span class="eyebrow">
+            NUESTRA FILOSOFÍA
+        </span>
+
+        <h2>
+            Creemos en
+            <em>lo esencial.</em>
+        </h2>
+
+        <p>
+            En Alma Cacao creemos que las mejores
+            experiencias no necesitan complicarse.
+            Un buen cacao, una buena compañía y
+            un momento para disfrutar pueden ser
+            suficientes.
+        </p>
+
+        <p>
+            Por eso creamos chocolates que buscan
+            respetar la esencia del cacao y convertir
+            cada bocado en una pequeña pausa del día.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="story-timeline">
+
+
+    <article class="story-block story-block-dark">
+
+        <div class="story-block-number">
+            01
+        </div>
+
+        <div class="story-block-visual">
+
+            <div class="story-seed">
+
+                <span>
+                    CACAO
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="story-block-content">
+
+            <span>
+                EL ORIGEN
+            </span>
+
+            <h2>
+                Todo comienza
+                con el cacao.
+            </h2>
+
+            <p>
+                Antes de convertirse en una barra,
+                el chocolate comienza en la tierra.
+                En las plantas, en las semillas y
+                en las personas que hacen posible
+                cada cosecha.
+            </p>
+
+        </div>
+
+    </article>
+
+
+    <article class="story-block story-block-light">
+
+        <div class="story-block-number">
+            02
+        </div>
+
+        <div class="story-block-visual">
+
+            <div class="story-bar">
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="story-block-content">
+
+            <span>
+                LA TRANSFORMACIÓN
+            </span>
+
+            <h2>
+                El cacao se
+                convierte en experiencia.
+            </h2>
+
+            <p>
+                Buscamos equilibrio entre intensidad,
+                textura y aroma para crear chocolates
+                que puedan disfrutarse lentamente.
+            </p>
+
+        </div>
+
+    </article>
+
+
+    <article class="story-block story-block-terra">
+
+        <div class="story-block-number">
+            03
+        </div>
+
+        <div class="story-block-visual">
+
+            <div class="story-gift">
+                        
+            <div class="story-block-content">
+
+            <span>
+                EL MOMENTO
+            </span>
+
+            <h2>
+                Finalmente,
+                llega a ti.
+            </h2>
+
+            <p>
+                Porque nuestro trabajo termina cuando
+                tú abres una caja, compartes una barra
+                o simplemente te regalas unos minutos
+                para disfrutar.
+            </p>
+
+        </div>
+
+    </article>
+
+</section>
+
+
+
+<section class="story-values">
+
+    <div class="story-values-heading">
+
+        <span class="eyebrow">
+            LO QUE NOS MUEVE
+        </span>
+
+        <h2>
+            Tres ideas.
+            <em>Una misma alma.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="values-grid">
+
+
+        <article class="value-card">
+
+            <span class="value-number">
+                01
+            </span>
+
+            <div class="value-icon">
+                ◇
+            </div>
+
+            <h3>
+                Calidad
+            </h3>
+
+            <p>
+                Elegimos cada elemento buscando
+                una experiencia de sabor equilibrada
+                y memorable.
+            </p>
+
+        </article>
+
+
+
+        <article class="value-card">
+
+            <span class="value-number">
+                02
+            </span>
+
+            <div class="value-icon">
+                ○
+            </div>
+
+            <h3>
+                Naturalidad
+            </h3>
+
+            <p>
+                Creemos en una propuesta honesta,
+                cercana y conectada con la esencia
+                del cacao.
+            </p>
+
+        </article>
+
+
+
+        <article class="value-card">
+
+            <span class="value-number">
+                03
+            </span>
+
+            <div class="value-icon">
+                ∞
+            </div>
+
+            <h3>
+                Experiencia
+            </h3>
+
+            <p>
+                Queremos que Alma Cacao forme parte
+                de momentos que quieras recordar.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="story-quote">
+
+    <div>
+
+        <h2>
+            El placer del buen
+            <em>cacao.</em>
+        </h2>
+
+        <p>
+            Más que chocolate,
+            una experiencia dulce y natural.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="story-cta">
+
+    <span class="eyebrow">
+        AHORA QUE CONOCES NUESTRA HISTORIA
+    </span>
+
+    <h2>
+        Conoce lo que
+        <em>creamos.</em>
+    </h2>
+
+    <a
+        href="Catalogo.html"
+        class="story-cta-button"
+    >
+        EXPLORAR CHOCOLATES
+    </a>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <span class="logo-main">
+                         </span>
+
+                <span class="logo-sub">
+                </span>
+
+            </div>
+
+            <p>
+                El placer del buen cacao.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explora
+            </h4>
+
+            <a href="Catalogo.html">
+                Chocolates
+            </a>
+
+            <a href="colecciones.html">
+                Colecciones
+            </a>
+
+            <a href="merch.html">
+                Merch
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+           </h4>
+
+            <a href="historia.html">
+                Nuestra historia
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Síguenos
+            </h4>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                TikTok
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026
+        </span>
+
+    </div>
+
+</footer>
+
+
+<div
+    class="search-overlay"
+    id="search-overlay"
+>
+
+    <button
+        class="search-close"
+        onclick="closeSearch()"
+    >
+        ×
+    </button>
+
+
+    <div class="search-content">
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="¿Qué estás buscando?"
+        >
+
+    </div>
+
+</div>
+
+
+<div
+    class="cart-overlay"
+    id="cart-overlay"
+></div>
+
+
+<aside
+    class="cart-panel"
+    id="cart-panel"
+>
+
+    <div class="cart-header">
+
+        <div>
+
+            <span>
+                TU PEDIDO
+            </span>
+
+            <h2>
+                Carrito
+            </h2>
+
+        </div>
+
+
+        <button
+            onclick="closeCart()"
+            class="cart-close"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cart-items"
+    >
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cart-total">
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            onclick="checkout()"
+        >
+            Finalizar pedido por WhatsApp
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
+
+<div class="footer-team">
+    <p>Proyecto desarrollado por: <span>Diego Vargas, Domenica Merchan, Paula Conforme, Analia Bajaña, Meilin Garcia e Scarleth Santistevan</span></p>

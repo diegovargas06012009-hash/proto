@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Catálogo | Alma Cacao</title>
+
+    <meta
+        name="description"
+        content="Descubre el catálogo de chocolates Alma Cacao."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+
+<body>
+
+
+<div class="cursor-glow"></div>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+
+        </a>
+
+         <nav class="desktop-menu">
+         <a href="index.html">Inicio</a>
+         <a href="Catalogo.html" class="active">Chocolates</a>       
+         <a href="colecciones.html">Colecciones</a>
+         <a href="historia.html">Nuestra historia</a>
+         <a href="merch.html">Merch</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="juego.html">Entretenimiento</a>
+    </nav>
+
+        <div class="nav-actions">
+        <button class="nav-icon" onclick="openSearch()" aria-label="Buscar">⌕</button>
+        
+        <button class="nav-icon cart-trigger" onclick="openCart()" aria-label="Carrito">
+            🛒 <span id="cart-count">0</span>
+        </button>
+
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+
+    <div
+        class="mobile-menu"
+        id="mobile-menu"
+    >
+
+        <a href="index.html">
+ 
+        </a>
+
+        <a href="Catalogo.html">
+ 
+        </a>
+
+        <a href="colecciones.html">
+ 
+        </a>
+
+        <a href="historia.html">
+ 
+       </a>
+
+        <a href="merch.html">
+ 
+        </a>
+
+        <a href="contacto.html">
+         </a>
+
+    </div>
+
+</header>
+
+<section class="catalog-hero">
+
+    <div class="catalog-hero-content">
+
+        <span class="eyebrow">
+            ALMA CACAO · CHOCOLATE ARTESANAL
+        </span>
+
+        <h1>
+            Nuestro
+            <em>catálogo</em>
+        </h1>
+
+        <p>
+            Una selección de chocolates creados para
+            convertir cada momento en una experiencia.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="catalog-section">
+
+    <div class="catalog-top">
+
+        <div>
+
+            <span class="eyebrow">
+                DESCUBRE
+            </span>
+
+            <h2>
+                Elige tu experiencia
+            </h2>
+
+        </div>
+
+
+        <div class="catalog-filters">
+
+            <button
+                class="filter-btn active"
+                onclick="filterProducts('all', this)"
+            >
+                Todos
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('dark', this)"
+            >
+                Chocolate oscuro
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('milk', this)"
+            >
+                Chocolate con leche
+            </button>
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('special', this)"
+            >
+                Especiales
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="catalog-grid" id="catalog-grid">
+
+
+
+        <article
+            class="catalog-product"
+            data-category="dark"
+        >
+
+            <div class="product-visual product-dark">
+
+                <span class="product-label">
+                    70%
+                </span>
+
+                <div class="chocolate-bar">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="catalog-product-info">
+
+                <span class="product-category">
+                    CHOCOLATE OSCURO
+                </span>
+
+                <h3>
+                    Alma Cacao 70%
+                </h3>
+
+                <p>
+                    Intenso, equilibrado y aromático.
+                    Una experiencia profunda de cacao.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $5.00
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Alma Cacao 70%', 5)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+
+        <article
+            class="catalog-product"
+            data-category="dark"
+        >
+
+            <div class="product-visual product-dark">
+
+                <span class="product-label">
+                    85%
+                </span>
+
+                <div class="chocolate-bar">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="catalog-product-info">
+
+                <span class="product-category">
+                    CHOCOLATE OSCURO
+                </span>
+
+                <h3>
+                    Alma Cacao 85%
+                </h3>
+
+                <p>
+                    Para los amantes del cacao intenso,
+                    elegante y con carácter.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $6.50
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Alma Cacao 85%', 6.5)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+
+
+        <article
+            class="catalog-product"
+            data-category="special"
+        >
+
+            <div class="product-visual product-almond">
+
+                <span class="product-label">
+                    ESPECIAL
+                </span>
+
+                <div class="chocolate-bar">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="catalog-product-info">
+
+                <span class="product-category">
+                </span>
+
+                <h3>
+                   Cacao & Almendras
+                </h3>
+
+                <p>
+                    Chocolate artesanal acompañado
+                    de almendras cuidadosamente seleccionadas.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $7.00
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Cacao & Almendras', 7)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+
+        <article
+           class="catalog-product"
+            data-category="milk"
+        >
+
+            <div class="product-visual product-milk">
+
+                <span class="product-label">
+                    SUAVE
+                </span>
+
+                <div class="chocolate-bar">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="catalog-product-info">
+
+                <span class="product-category">
+                    CHOCOLATE CON LECHE
+                </span>
+
+                <h3>
+                    Alma Cacao Milk
+                </h3>
+
+                <p>
+                    Cremoso, suave y delicado,
+                    pensado para disfrutar sin prisa.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $5.50
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Alma Cacao Milk', 5.5)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+
+        <article
+            class="catalog-product"
+            data-category="special"
+        >
+
+            <div class="product-visual product-special">
+
+                <span class="product-label">
+                    SIGNATURE
+                </span>
+
+                <div class="chocolate-bar">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="catalog-product-info">
+
+                <span class="product-category">
+                    SIGNATURE
+                </span>
+
+                <h3>
+                    Alma Signature
+                </h3>
+
+                <p>
+                    Nuestra propuesta especial para
+                    quienes buscan algo diferente.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $8.00
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Alma Signature', 8)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+
+        <article
+            class="catalog-product"
+            data-category="special"
+        >
+
+            <div class="product-visual product-gift">
+
+                <span class="product-label">
+                    REGALO
+                </span>
+
+                <div class="chocolate-box">
+
+                    <span>
+                        ALMA
+                    </span>
+
+                    <small>
+                        CACAO
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="catalog-product-info">
+
+                <span class="product-category">
+                    EXPERIENCIAS
+                </span>
+
+                <h3>
+                    Caja Alma
+                </h3>
+
+                <p>
+                    Una selección especial para regalar
+                    momentos llenos de sabor.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $18.00
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Caja Alma', 18)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="catalog-quote">
+
+    <div>
+
+        <span>
+            ALMA CACAO
+        </span>
+
+        <h2>
+            El verdadero lujo
+            está en disfrutar
+            <em>lo esencial.</em>
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<section class="catalog-cta">
+
+    <div>
+
+        <span class="eyebrow">
+            MÁS QUE CHOCOLATE
+        </span>
+
+        <h2>
+            Descubre el universo
+            <em>Alma Cacao.</em>
+        </h2>
+
+        <p>
+            Conoce nuestras colecciones,
+            nuestra historia y todo lo que
+            estamos creando.
+        </p>
+
+        <a
+            href="colecciones.html"
+            class="btn btn-light"
+        >
+            Explorar colecciones
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <span class="logo-main">
+                    ALMA
+                </span>
+
+                <span class="logo-sub">
+                    CACAO
+                </span>
+
+            </div>
+
+            <p>
+                El placer del buen cacao.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explora
+            </h4>
+
+            <a href="catalogo.html">
+                Chocolates
+            </a>
+
+            <a href="colecciones.html">
+                Colecciones
+            </a>
+
+            <a href="merch.html">
+                Merch
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Alma Cacao
+            </h4>
+
+            <a href="historia.html">
+                Nuestra historia
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Síguenos
+            </h4>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                TikTok
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Alma Cacao
+        </span>
+
+        <span>
+            Hecho con cacao y alma.
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+
+
+<div
+    class="search-overlay"
+    id="search-overlay"
+>
+
+    <button
+        class="search-close"
+        onclick="closeSearch()"
+    >
+        ×
+    </button>
+
+
+    <div class="search-content">
+
+        <span>
+            BUSCAR EN ALMA CACAO
+        </span>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="¿Qué estás buscando?"
+        >
+
+    </div>
+
+</div>
+
+
+
+
+<div
+    class="cart-overlay"
+    id="cart-overlay"
+></div>
+
+
+<aside
+    class="cart-panel"
+    id="cart-panel"
+>
+
+    <div class="cart-header">
+
+        <div>
+
+            <span>
+                TU PEDIDO
+            </span>
+
+            <h2>
+                Carrito
+            </h2>
+
+        </div>
+
+
+        <button
+            onclick="closeCart()"
+            class="cart-close"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cart-items"
+    >
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cart-total">
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            onclick="checkout()"
+        >
+            Finalizar pedido por WhatsApp
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<script src="app.js"></script>
+
+
+<script>
+
+function filterProducts(category, button) {
+
+    const products =
+        document.querySelectorAll(".catalog-product");
+
+    const buttons =
+        document.querySelectorAll(".filter-btn");
+
+
+
+    buttons.forEach(btn => {
+
+        btn.classList.remove("active");
+
+    });
+
+
+    button.classList.add("active");
+
+
+
+    products.forEach(product => {
+
+        const productCategory =
+            product.dataset.category;
+
+
+        if (
+            category === "all" ||
+            productCategory === category
+        ) {
+
+            product.style.display = "block";
+
+            setTimeout(() => {
+
+                product.style.opacity = "1";
+                product.style.transform = "translateY(0)";
+
+            }, 30);
+
+        } else {
+
+            product.style.opacity = "0";
+            product.style.transform = "translateY(20px)";
+
+            setTimeout(() => {
+
+                product.style.display = "none";
+
+            }, 250);
+
+        }
+
+    });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+
+<div class="footer-team">
+    <p>Proyecto desarrollado por: <span>Diego Vargas, Domenica Merchan, Paula Conforme, Analia Bajaña, Meilin Garcia e Scarleth Santistevan</span></p>

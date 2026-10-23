@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma Cacao - Cosecha Gourmet</title>
+    <link rel="stylesheet" href="JStyle.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <div id="start-screen" class="screen active">
+            <h1>Alma Cacao</h1>
+            <p>Atrapa las mejores habas de cacao dorado y evita las amargas para crear la barra perfecta.</p>
+            <button class="btn-primary" onclick="startGame()">Comenzar Cosecha</button>
+        </div>
+    
+        <div id="game-screen" class="screen">
+            <div class="hud">
+                <div>Puntuación: <span id="score">0</span></div>
+                <div>Tiempo: <span id="timer">30</span>s</div>
+            </div>
+            <div id="play-area">
+    
+                <div id="basket">🧺</div>
+            </div>
+        </div>
+
+    
+    <div id="game-over-screen" class="screen">
+    <h2>¡Cosecha Finalizada!</h2>
+    <p>Tu puntuación: <span id="final-score">0</span></p>
+    
+        <div id="reward-message" class="reward-box hidden">
+        <h3>🎉 ¡Felicidades!</h3>
+        <p>Has sido seleccionado para ganar <strong>barras de chocolate gratis</strong> en nuestra tienda.</p>
+        <code class="coupon">ALMA-CACAO-FREE</code>
+    </div>
+
+        <div class="leaderboard-container">
+        <h3>🏆 Mejores Cosechas</h3>
+        <ol id="leaderboard-list">
+            
+        </ol>
+    </div>
+
+    <div style="text-align: center; margin: 20px 0;">
+    <a href="index.html" class="btn-inicio">← Volver al Inicio</a>
+</div>
+
+<div class="game-container">
+</div>
+
+    <button class="btn-primary" onclick="startGame()">Jugar de Nuevo</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Merch | Alma Cacao</title>
+
+    <meta
+        name="description"
+        content="Descubre la colección de merch de Alma Cacao: prendas, accesorios y objetos inspirados en nuestra pasión por el cacao."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        
+         <nav class="desktop-menu">
+         <a href="index.html">Inicio</a>
+         <a href="Catalogo.html">Chocolates</a>       
+         <a href="colecciones.html">Colecciones</a>
+         <a href="historia.html">Nuestra historia</a>
+         <a href="merch.html" class="active">Merch</a>
+         <a href="contacto.html">Contacto</a>
+           <a href="juego.html">Entretenimiento</a>
+    </nav>
+
+        <div class="nav-actions">
+
+            <button
+                class="nav-icon"
+                onclick="openSearch()"
+                aria-label="Buscar"
+            >
+                ⌕
+            </button>
+
+            <button
+                class="nav-icon cart-button"
+                onclick="openCart()"
+                aria-label="Carrito"
+            >
+                ♡
+                <span id="cart-count">0</span>
+            </button>
+
+            <button
+                class="menu-button"
+                onclick="toggleMenu()"
+                aria-label="Abrir menú"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+
+        <a href="index.html">Inicio</a>
+
+        <a href="Catalogo.html">Chocolates</a>
+
+        <a href="colecciones.html">Colecciones</a>
+
+        <a href="historia.html">Nuestra historia</a>
+
+        <a href="merch.html">Merch</a>
+
+        <a href="contacto.html">Contacto</a>
+
+    </div>
+
+
+    <main>
+
+        <section class="merch-hero">
+
+            <div class="merch-hero-content">
+
+                <span class="eyebrow">
+                    ALMA CACAO · MERCH
+                </span>
+
+                <h1>
+                    Lleva el
+                    <em>cacao</em>
+                    contigo.
+                </h1>
+
+                <p>
+                    Una colección creada para quienes quieren llevar
+                    la esencia de Alma Cacao más allá del chocolate.
+                </p>
+
+                <a href="#merch-productos" class="merch-hero-button">
+                    Explorar colección
+                </a>
+
+            </div>
+
+            <div class="merch-hero-visual">
+
+                <div class="merch-circle"></div>
+
+                <div class="merch-shirt">
+
+                    <div class="shirt-neck"></div>
+
+                    <div class="shirt-logo">
+                        ALMA
+                        <small>CACAO</small>
+                    </div>
+
+                </div>
+
+                <span class="merch-floating-text">
+                    MADE WITH CACAO
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <section class="merch-intro">
+
+            <div class="merch-intro-number">
+                01
+            </div>
+
+            <div class="merch-intro-content">
+
+                <span class="section-label">
+                    MÁS QUE MERCH
+                </span>
+
+                <h2>
+                    Una forma de
+                    <em>vivir Alma.</em>
+                </h2>
+
+                <p>
+                    Diseñamos cada pieza pensando en la misma filosofía
+                    que acompaña nuestros chocolates: simple, auténtica,
+                    cálida y hecha para disfrutar.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section
+            class="merch-products"
+            id="merch-productos"
+        >
+
+            <div class="merch-section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        COLECCIÓN 01
+                    </span>
+
+                    <h2>
+                        Alma
+                        <em>Essentials</em>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Piezas esenciales para acompañarte
+                    todos los días.
+                </p>
+
+            </div>
+
+
+            <div class="merch-grid">
+
+
+                <article class="merch-card">
+
+                    <div class="merch-product-visual merch-shirt-cream">
+
+                        <span class="merch-product-logo">
+                            ALMA
+                            <small>CACAO</small>
+                        </span>
+
+                        <span class="merch-product-tag">
+                            ESSENTIAL
+                        </span>
+
+                    </div>
+
+                    <div class="merch-product-info">
+
+                        <div>
+
+                            <span class="merch-category">
+                                ROPA
+                            </span>
+
+                            <h3>
+                                Camiseta Alma Cream
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            $18.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="merch-add"
+                        onclick="addToCart('Camiseta Alma Cream', 18)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <article class="merch-card">
+
+                    <div class="merch-product-visual merch-shirt-brown">
+
+                        <span class="merch-product-logo">
+                            ALMA
+                            <small>CACAO</small>
+                        </span>
+
+                        <span class="merch-product-tag">
+                            ESSENTIAL
+                        </span>
+
+                    </div>
+
+                    <div class="merch-product-info">
+
+                        <div>
+
+                            <span class="merch-category">
+                                ROPA
+                            </span>
+
+                            <h3>
+                                Camiseta Cacao
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            $20.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="merch-add"
+                        onclick="addToCart('Camiseta Cacao', 20)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <article class="merch-card">
+
+                    <div class="merch-product-visual merch-cap">
+
+                        <div class="cap-shape"></div>
+
+                        <span class="cap-logo">
+                            A
+                        </span>
+
+                        <span class="merch-product-tag">
+                            ALMA
+                        </span>
+
+                    </div>
+
+                    <div class="merch-product-info">
+
+                        <div>
+
+                            <span class="merch-category">
+                                ACCESORIOS
+                            </span>
+
+                            <h3>
+                                Gorra Alma
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            $15.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="merch-add"
+                        onclick="addToCart('Gorra Alma', 15)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <article class="merch-card">
+
+                    <div class="merch-product-visual merch-tote">
+
+                        <div class="tote-bag">
+
+                            <div class="tote-handle"></div>
+
+                            <div class="tote-logo">
+                                ALMA
+                                <small>CACAO</small>
+                            </div>
+
+                        </div>
+
+                        <span class="merch-product-tag">
+                            DAILY
+                        </span>
+
+                    </div>
+
+                    <div class="merch-product-info">
+
+                        <div>
+
+                            <span class="merch-category">
+                                ACCESORIOS
+                            </span>
+
+                            <h3>
+                                Tote Alma Cacao
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            $12.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="merch-add"
+                        onclick="addToCart('Tote Alma Cacao', 12)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <article class="merch-card">
+
+                    <div class="merch-product-visual merch-mug">
+
+                        <div class="mug-shape">
+
+                            <div class="mug-handle"></div>
+
+                            <span>
+                                ALMA
+                            </span>
+
+                        </div>
+
+                        <span class="merch-product-tag">
+                            RITUAL
+                        </span>
+
+                    </div>
+
+                    <div class="merch-product-info">
+
+                        <div>
+
+                            <span class="merch-category">
+                                HOGAR
+                            </span>
+
+                            <h3>
+                                Taza Alma
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            $14.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="merch-add"
+                        onclick="addToCart('Taza Alma', 14)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <article class="merch-card">
+
+                    <div class="merch-product-visual merch-notebook">
+
+                        <div class="notebook">
+
+                            <span>
+                                ALMA
+                            </span>
+
+                            <small>
+                                CACAO
+                            </small>
+
+                        </div>
+
+                        <span class="merch-product-tag">
+                            STUDIO
+                        </span>
+
+                    </div>
+
+                    <div class="merch-product-info">
+
+                        <div>
+
+                            <span class="merch-category">
+                                PAPELERÍA
+                            </span>
+
+                            <h3>
+                                Cuaderno Alma
+                            </h3>
+
+                        </div>
+
+                        <strong>
+                            $10.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="merch-add"
+                        onclick="addToCart('Cuaderno Alma', 10)"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="merch-special">
+
+            <div class="merch-special-visual">
+
+                <div class="special-box">
+
+                    <span>
+                        ALMA
+                    </span>
+
+                    <small>
+                        CACAO
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="merch-special-content">
+
+                <span class="section-label">
+                    EDICIÓN ESPECIAL
+                </span>
+
+                <h2>
+                    El ritual
+                    <em>del cacao.</em>
+                </h2>
+
+                <p>
+                    Una selección especial de piezas pensadas
+                    para acompañar esos pequeños momentos que
+                    hacen especial cada día.
+                </p>
+
+                <a
+                    href="Catalogo.html"
+                    class="merch-special-button"
+                >
+                    Ver chocolates
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="merch-cta">
+
+            <span class="section-label">
+                ALMA CACAO
+            </span>
+
+            <h2>
+                Hecho para
+                <em>quedarse.</em>
+            </h2>
+
+            <p>
+                Descubre piezas que cuentan la misma historia
+                que nuestro chocolate.
+            </p>
+
+            <a
+                href="contacto.html"
+                class="merch-cta-button"
+            >
+                Contáctanos
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                <span class="logo-main">ALMA</span>
+                <span class="logo-sub">CACAO</span>
+            </a>
+
+            <p>
+                El placer del buen cacao.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="Catalogo.html">
+                Chocolates
+            </a>
+
+            <a href="colecciones.html">
+                Colecciones
+            </a>
+
+            <a href="historia.html">
+                Nuestra historia
+            </a>
+
+            <a href="merch.html">
+                Merch
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Alma Cacao
+            </span>
+
+            <span>
+                Hecho con cacao y alma.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <div
+        class="search-overlay"
+        id="search-overlay"
+    >
+
+        <button
+            class="search-close"
+            onclick="closeSearch()"
+        >
+            ×
+        </button>
+
+        <div class="search-box">
+
+            <span>
+                BUSCAR
+            </span>
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="¿Qué estás buscando?"
+                autocomplete="off"
+            >
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="cart-overlay"
+        id="cart-overlay"
+        onclick="closeCart()"
+    ></div>
+
+    <aside
+        class="cart-panel"
+        id="cart-panel"
+    >
+
+        <div class="cart-header">
+
+            <h2>
+                Tu carrito
+            </h2>
+
+            <button
+                onclick="closeCart()"
+            >
+                ×
+            </button>
+
+        </div>
+
+        <div
+            class="cart-items"
+            id="cart-items"
+        ></div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cart-total">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-button"
+                onclick="checkout()"
+            >
+                Comprar por WhatsApp
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+<div class="footer-team">
+    <p>Proyecto desarrollado por: <span>Diego Vargas, Domenica Merchan, Paula Conforme, Analia Bajaña, Meilin Garcia e Scarleth Santistevan</span></p>
